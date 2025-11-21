@@ -259,35 +259,6 @@ He añadido dos representaciones del diagrama en este README: una versión **ASC
 
 ---
 
-He incluido ambos diagramas arriba en el README. A continuación agrego una versión **Mermaid** del diagrama (útil para render en Markdown o herramientas tipo Mermaid Live) y notas sobre los archivos de imagen generados.
-
-### Diagrama Mermaid
-
-```mermaid
-flowchart LR
-subgraph Extraccion
-POS[POS (SQL)]
-Invent[Inventario API]
-CRM[CRM (CSV)]
-Web[Web Logs (JSON)]
-end
-
-POS --> StagingPOS[Staging POS]
-Invent --> StagingInv[Staging Inventario]
-CRM --> StagingCRM[Staging CRM]
-Web --> StagingWeb[Staging Web]
-
-StagingPOS --> ETL[Transform / ETL]
-StagingInv --> ETL
-StagingCRM --> ETL
-StagingWeb --> ETL
-
-ETL --> DW[Data Warehouse]
-DW --> BI[BI / Dashboards]
-
-classDef source fill:#f9f,stroke:#333,stroke-width:1px
-class POS,Invent,CRM,Web source
-```
 
 
 
