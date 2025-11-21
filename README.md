@@ -265,28 +265,28 @@ He incluido ambos diagramas arriba en el README. A continuación agrego una vers
 
 ```mermaid
 flowchart LR
-  subgraph Extraccion
-    POS[POS (SQL)]
-    Invent[Inventario API]
-    CRM[CRM (CSV)]
-    Web[Web Logs (JSON)]
-  end
+subgraph Extraccion
+POS[POS (SQL)]
+Invent[Inventario API]
+CRM[CRM (CSV)]
+Web[Web Logs (JSON)]
+end
 
-  POS --> StagingPOS[Staging POS]
-  Invent --> StagingInv[Staging Inventario]
-  CRM --> StagingCRM[Staging CRM]
-  Web --> StagingWeb[Staging Web]
+POS --> StagingPOS[Staging POS]
+Invent --> StagingInv[Staging Inventario]
+CRM --> StagingCRM[Staging CRM]
+Web --> StagingWeb[Staging Web]
 
-  StagingPOS --> ETL[Transform / ETL]
-  StagingInv --> ETL
-  StagingCRM --> ETL
-  StagingWeb --> ETL
+StagingPOS --> ETL[Transform / ETL]
+StagingInv --> ETL
+StagingCRM --> ETL
+StagingWeb --> ETL
 
-  ETL --> DW[Data Warehouse]
-  DW --> BI[BI / Dashboards]
+ETL --> DW[Data Warehouse]
+DW --> BI[BI / Dashboards]
 
-  classDef source fill:#f9f,stroke:#333,stroke-width:1px;
-  class POS,Invent,CRM,Web source
+classDef source fill:#f9f,stroke:#333,stroke-width:1px
+class POS,Invent,CRM,Web source
 ```
 
 
