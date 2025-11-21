@@ -1,5 +1,6 @@
 # Diseño conceptual de pipeline ETL — Cadena de tiendas minoristas
 
+
 ## Resumen
 
 Documento README que describe de forma ordenada el diseño conceptual de un pipeline ETL para integrar datos de una cadena de tiendas minoristas. Incluye: fuentes de datos, esquema destino, transformaciones, estrategia de carga, verificación, monitoreo y ejemplos (SQL y pseudocódigo).
@@ -260,6 +261,7 @@ He añadido dos representaciones del diagrama en este README: una versión **ASC
 ---
 
 
-
+# 14  Quiz del Dia 1 
+![quiz](img/quiz.png)
 
 
