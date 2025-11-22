@@ -3,6 +3,9 @@
 Este documento complementa el diseño conceptual del pipeline ETL con **ejemplos prácticos** listos para ejecutar.
 
 ---
+| Autor            | Fecha        | Día |
+|------------------|--------------|----------|
+| **Carlos Vásquez** |21 Noviembre 2025 | 1|
 
 ## 📁 Archivos incluidos
 
@@ -10,17 +13,17 @@ Este documento complementa el diseño conceptual del pipeline ETL con **ejemplos
 
 | Archivo | Descripción | Registros | Descarga |
 |---------|-------------|-----------|----------|
-| `ventas_pos_ejemplo.csv` | Ventas del POS con diferentes escenarios | 7 ventas | [📥 Ver archivo](ventas-pos-ejemplo.csv) |
-| `crm_clientes_ejemplo.csv` | Datos de clientes y segmentación | 5 clientes | [📥 Ver archivo](crm-clientes-ejemplo.csv) |
-| `inventario_api_response.json` | Respuesta simulada de la API de inventario | 5 productos | [📥 Ver archivo](inventario-api-response.json) |
-| `web_logs_ejemplo.json` | Logs de eventos del sitio web | 5 eventos | [📥 Ver archivo](web-logs-ejemplo.json) |
+| `ventas_pos_ejemplo.csv` | Ventas del POS con diferentes escenarios | 7 ventas | [📥 Ver archivo](ventas_pos_ejemplo.csv) |
+| `crm_clientes_ejemplo.csv` | Datos de clientes y segmentación | 5 clientes | [📥 Ver archivo](crm_clientes_ejemplo.csv) |
+| `inventario_api_response.json` | Respuesta simulada de la API de inventario | 5 productos | [📥 Ver archivo](inventario_api_response.json) |
+| `web_logs_ejemplo.json` | Logs de eventos del sitio web | 5 eventos | [📥 Ver archivo](web_logs_ejemplo.json) |
 
 ### 2. **Scripts**
 
 | Archivo | Descripción | Lenguaje | Descarga |
 |---------|-------------|----------|----------|
-| `etl_demo_script.py` | Pipeline ETL completo con carga incremental | Python 3 | [📥 Ver archivo](#etl-demo-scriptpy) |
-| `setup_warehouse.sql` | Creación de tablas del data warehouse | SQL (PostgreSQL) | [📥 Ver archivo](#setup-warehousesql) |
+| `etl_demo_script.py` | Pipeline ETL completo con carga incremental | Python 3 | [📥 Ver archivo](#etl_demo_scriptpy) |
+| `setup_warehouse.sql` | Creación de tablas del data warehouse | SQL (PostgreSQL) | [📥 Ver archivo](#setup_warehousesql) |
 
 ---
 
@@ -67,6 +70,7 @@ Nuevo watermark:         2025-01-15 14:20:00
 ======================================================================
 ```
 ![Resumen](img/prueba.png)
+
 ### Opción B: Setup del data warehouse (PostgreSQL)
 
 ```bash
