@@ -1,0 +1,63 @@
+[
+    {
+        "event_type": "page_view",
+        "timestamp": "2025-01-15T11:25:00.123Z",
+        "session_id": "sess_abc123",
+        "user_id": 2341,
+        "page": "/productos/camisetas",
+        "referrer": "https://google.com",
+        "device": "mobile"
+    },
+    {
+        "event_type": "add_to_cart",
+        "timestamp": "2025-01-15T11:28:30.456Z",
+        "session_id": "sess_abc123",
+        "user_id": 2341,
+        "product_id": "POS_SKU_789",
+        "quantity": 2,
+        "device": "mobile"
+    },
+    {
+        "event_type": "purchase",
+        "timestamp": "2025-01-15T11:30:15.789Z",
+        "session_id": "sess_abc123",
+        "user_id": 2341,
+        "order_id": 1001,
+        "total_amount": 51.00,
+        "payment_method": "credit_card",
+        "items": [
+            {
+                "product_id": "POS_SKU_789",
+                "quantity": 2,
+                "price": 25.50
+            }
+        ],
+        "device": "mobile"
+    },
+    {
+        "event_type": "page_view",
+        "timestamp": "2025-01-15T12:10:00.234Z",
+        "session_id": "sess_xyz789",
+        "user_id": null,
+        "page": "/productos/zapatillas",
+        "referrer": "direct",
+        "device": "desktop"
+    },
+    {
+        "event_type": "purchase",
+        "timestamp": "2025-01-15T12:15:45.567Z",
+        "session_id": "sess_xyz789",
+        "user_id": null,
+        "order_id": 1002,
+        "total_amount": 89.99,
+        "payment_method": "paypal",
+        "items": [
+            {
+                "product_id": "POS_SKU_456",
+                "quantity": 1,
+                "price": 89.99
+            }
+        ],
+        "device": "desktop"
+    }
+]

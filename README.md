@@ -10,7 +10,7 @@ Este documento complementa el diseño conceptual del pipeline ETL con **ejemplos
 
 | Archivo | Descripción | Registros | Descarga |
 |---------|-------------|-----------|----------|
-| `ventas_pos_ejemplo.csv` | Ventas del POS con diferentes escenarios | 7 ventas | [📥 Ver archivo](#ventas-pos-ejemplocsv) |
+| `ventas_pos_ejemplo.csv` | Ventas del POS con diferentes escenarios | 7 ventas | [📥 Ver archivo]([ventas-pos-ejemplocsv](ventas-pos-ejemplocsv)) |
 | `crm_clientes_ejemplo.csv` | Datos de clientes y segmentación | 5 clientes | [📥 Ver archivo](#crm-clientes-ejemplocsv) |
 | `inventario_api_response.json` | Respuesta simulada de la API de inventario | 5 productos | [📥 Ver archivo](#inventario-api-responsejson) |
 | `web_logs_ejemplo.json` | Logs de eventos del sitio web | 5 eventos | [📥 Ver archivo](#web-logs-ejemplojson) |
@@ -1079,8 +1079,14 @@ COMMENT ON TABLE etl_watermarks IS 'Marcas de agua para cargas incrementales por
 
 SELECT 'Setup completado exitosamente' as mensaje;
 
+```
 
-# 14  Quiz del Dia 1 
+### Se ejecuta 
+```python
+python etl_demo_script.py
+```
+
+###  Quiz del Dia 1 
 ![quiz](img/quiz.png)
 
 
