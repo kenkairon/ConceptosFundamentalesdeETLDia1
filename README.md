@@ -69,7 +69,7 @@ Duplicados detectados:   1
 Nuevo watermark:         2025-01-15 14:20:00
 ======================================================================
 ```
-![Resumen](img/prueba.png)
+![Resumen](img/pruebas.png)
 
 ### Opción B: Setup del data warehouse (PostgreSQL)
 
