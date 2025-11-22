@@ -1,0 +1,17 @@
+[
+    {
+        "event_type": "page_view",
+        "timestamp": "2025-01-15T11:25:00.123Z",
+        "session_id": "sess_abc123",
+        "user_id": 2341,
+        "page": "/productos/camisetas"
+    },
+    {
+        "event_type": "purchase",
+        "timestamp": "2025-01-15T11:30:15.789Z",
+        "session_id": "sess_abc123",
+        "user_id": 2341,
+        "order_id": 1001,
+        "total_amount": 51.00
+    }
+]

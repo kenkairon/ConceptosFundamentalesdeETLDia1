@@ -10,10 +10,10 @@ Este documento complementa el diseño conceptual del pipeline ETL con **ejemplos
 
 | Archivo | Descripción | Registros | Descarga |
 |---------|-------------|-----------|----------|
-| `ventas_pos_ejemplo.csv` | Ventas del POS con diferentes escenarios | 7 ventas | [📥 Ver archivo]([ventas-pos-ejemplocsv](ventas-pos-ejemplocsv)) |
-| `crm_clientes_ejemplo.csv` | Datos de clientes y segmentación | 5 clientes | [📥 Ver archivo](#crm-clientes-ejemplocsv) |
-| `inventario_api_response.json` | Respuesta simulada de la API de inventario | 5 productos | [📥 Ver archivo](#inventario-api-responsejson) |
-| `web_logs_ejemplo.json` | Logs de eventos del sitio web | 5 eventos | [📥 Ver archivo](#web-logs-ejemplojson) |
+| `ventas_pos_ejemplo.csv` | Ventas del POS con diferentes escenarios | 7 ventas | [📥 Ver archivo](ventas-pos-ejemplo.csv) |
+| `crm_clientes_ejemplo.csv` | Datos de clientes y segmentación | 5 clientes | [📥 Ver archivo](crm-clientes-ejemplo.csv) |
+| `inventario_api_response.json` | Respuesta simulada de la API de inventario | 5 productos | [📥 Ver archivo](inventario-api-response.json) |
+| `web_logs_ejemplo.json` | Logs de eventos del sitio web | 5 eventos | [📥 Ver archivo](web-logs-ejemplo.json) |
 
 ### 2. **Scripts**
 
@@ -32,7 +32,7 @@ Este documento complementa el diseño conceptual del pipeline ETL con **ejemplos
 # 1. Copiar el contenido de etl_demo_script.py (ver más abajo)
 # 2. Guardar como etl_demo_script.py
 # 3. Ejecutar (no requiere dependencias externas)
-python3 etl_demo_script.py
+python etl_demo_script.py
 ```
 
 **Salida esperada:**
@@ -66,7 +66,7 @@ Duplicados detectados:   1
 Nuevo watermark:         2025-01-15 14:20:00
 ======================================================================
 ```
-
+![Resumen](img/prueba.png)
 ### Opción B: Setup del data warehouse (PostgreSQL)
 
 ```bash
@@ -352,7 +352,7 @@ id_venta,created_at,id_tienda,id_cliente,id_producto,cantidad,precio_unitario
 1007,2025-01-15 17:30:00,8,1523,POS_SKU_123,5,15.00
 ```
 
-[⬆️ Volver al índice](#archivos-incluidos)
+
 
 ---
 
@@ -367,7 +367,7 @@ id_cliente,nombre,email,segmento,fecha_actualizacion
 3456,Laura Martínez,laura.martinez@email.com,premium,2025-01-10
 ```
 
-[⬆️ Volver al índice](#archivos-incluidos)
+
 
 ---
 
@@ -422,7 +422,7 @@ id_cliente,nombre,email,segmento,fecha_actualizacion
 }
 ```
 
-[⬆️ Volver al índice](#archivos-incluidos)
+
 
 ---
 
@@ -493,8 +493,6 @@ id_cliente,nombre,email,segmento,fecha_actualizacion
   }
 ]
 ```
-
-[⬆️ Volver al índice](#archivos-incluidos)
 
 ---
 
@@ -796,7 +794,7 @@ if __name__ == "__main__":
     main()
 ```
 
-[⬆️ Volver al índice](#archivos-incluidos)
+
 
 ---
 
@@ -1079,11 +1077,6 @@ COMMENT ON TABLE etl_watermarks IS 'Marcas de agua para cargas incrementales por
 
 SELECT 'Setup completado exitosamente' as mensaje;
 
-```
-
-### Se ejecuta 
-```python
-python etl_demo_script.py
 ```
 
 ###  Quiz del Dia 1 
